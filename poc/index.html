@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Newsletter portal</title>
+        <link rel="stylesheet" href="main.css">
+        
+    </head>
+    <body>
+        <!--header-->
+            <div class ="header">
+                <div class="heading">
+                    <h1> Newsletter</h1>
+                </div>
+            </div>
+            <!--Body-->
+            <form id="form1">
+                <fieldset>
+                    <legend> Data</legend>
+                    <label>Newsletter:</label><br>
+                    <input type="text" id="name" name="newsletter" data-id="newsLetter" data-error="nameError"><br>
+                    <label id="nameError" >**Invalid Newsletter</label><br>
+                    <label>Enter Email:</label><br>
+                    <input type="email" id="email" name="email" data-id="email" data-error="emailError"><br>
+                    <label id="emailError" >**Invalid Email</label><br>
+                    <label>Enter Newsletter Link:</label><br>
+                    <input type="text" id="url" name="url" data-id="urlChecker" data-error="urlError"><br>
+                    <label id="urlError" >**Invalid Url</label><br>
+                <label> Category:</label><br>
+                <select name="type" id="category">
+                    <option>International News</option>
+                    <option>National News</option>
+                    <option>Andhra News</option>
+                    <option>Covid-19 Updates</option>
+                    <option>Poltical News</option>
+                    <option>Ipl News</option>
+                </select>
+                <br><br> Description: <br>
+                <textarea 
+                name="editor"
+                cols="50"
+                rows="10"
+                maxlength="100"></textarea><br>
+                <button type="submit">Publish</button>
+
+            </form>
+        </fieldset>
+        <br>
+        <div id="feed">
+            
+        </div>
+        <!--For accessing the js file-->
+        <script src="es6.js"></script> 
+    </body>
+</html>

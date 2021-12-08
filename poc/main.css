@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+}
+#nameError{
+    color:red;
+    display: none;
+}
+
+#emailError{
+    color:red;
+    display: none;
+}
+#urlError{
+    color:red;
+    display: none;
+}
